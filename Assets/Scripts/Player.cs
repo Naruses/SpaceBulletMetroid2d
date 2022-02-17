@@ -10,15 +10,9 @@ public class Player : MonoBehaviour
     bool moveLeft;
     bool moveRight;
 
-    void Start()
-    {
-
-    }
-
-
     class PlayerMovement
 {
-     void Update();
+     void Update()
         moveUp = Input.GetKey(KeyCode.UpArrow) || moveUp = Input.GetKey(KeyCode.W);
         moveDown = Input.GetKey(KeyCode.DownArrow) || moveDown = Input.GetKey(KeyCode.S);
         moveLeft = Input.GetKey(KeyCode.LeftArrow) || moveLeft = Input.GetKey(KeyCode.A);
