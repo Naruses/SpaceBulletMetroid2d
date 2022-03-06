@@ -22,10 +22,10 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-         moveUp = Input.GetKey(KeyCode.UpArrow) ||  moveUp = Input.GetKey(KeyCode.W);
-         moveDown = Input.GetKey(KeyCode.DownArrow) || moveDown = Input.GetKey(KeyCode.S);
-         moveLeft = Input.GetKey(KeyCode.LeftArrow) || moveLeft = Input.GetKey(KeyCode.A);
-         moveRight = Input.GetKey(KeyCode.RightArrow) || moveRight = Input.GetKey(KeyCode.D);
+        moveUp = Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W);
+        moveDown = Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S);
+        moveLeft = Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A);
+        moveRight = Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D);
 
         shoot = Input.GetKeyDown(KeyCode.LeftControl);
         if (shoot)
@@ -35,9 +35,10 @@ public class PlayerControl : MonoBehaviour
             {
                 gun.Shoot();
             }
+        }
     }
     private void FixedUpdate()
-    { 
+    {
         Vector2 pos = transform.position;
         float moveAmount = moveSpeed * Time.fixedDeltaTime;
         Vector2 move = Vector2.zero;
@@ -65,13 +66,13 @@ public class PlayerControl : MonoBehaviour
         float moveMagnitude = Mathf.Sqrt(move.x * move.x + move.y * move.y);
         if (moveMagnitude > moveAmount)
         {
-    float ratio = moveAmount / moveMagnitude;
+            float ratio = moveAmount / moveMagnitude;
         }
         pos += move;
 
         transform.position = pos;
     }
-                class PlayerWeapon
+    class PlayerWeapon
     {
       //  public void fire();
     }   
