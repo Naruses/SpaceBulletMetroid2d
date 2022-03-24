@@ -8,9 +8,12 @@ public class Bullet : MonoBehaviour
     public float speed = 2;
 
     public Vector2 velocity;
+
+    public bool isEnemy = false;
     void Start()
     {
         Destroy(gameObject, 3);
+        DontDestroyOnLoad(gameObject);
     }
     void Update()
     {

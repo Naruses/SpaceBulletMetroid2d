@@ -58,8 +58,9 @@
     <Compile Include="Assets\Scripts\FactoryTestHomeWork.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\MoveSin.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Destructable.cs" />
+    <Compile Include="Assets\Scripts\Level.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
