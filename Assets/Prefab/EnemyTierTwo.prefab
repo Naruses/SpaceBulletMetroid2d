@@ -47,6 +47,7 @@ MonoBehaviour:
   autoShoot: 1
   shootIntervalSeconds: 0.5
   shootDelaySeconds: 1
+  isActive: 0
 --- !u!1 &2827950217034038980
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +95,7 @@ MonoBehaviour:
   autoShoot: 1
   shootIntervalSeconds: 0.5
   shootDelaySeconds: 1
+  isActive: 0
 --- !u!1 &6278396761331215817
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +109,7 @@ GameObject:
   - component: {fileID: 3025735155201350294}
   - component: {fileID: 520253041871551454}
   - component: {fileID: 4772660190598602730}
+  - component: {fileID: -6462183257388685917}
   m_Layer: 0
   m_Name: EnemyTierTwo
   m_TagString: Untagged
@@ -207,6 +210,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &-6462183257388685917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6278396761331215817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebee833422ad25649bd8ecbd780f8a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 250
 --- !u!1 &7267206937595142311
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,3 +352,4 @@ MonoBehaviour:
   autoShoot: 1
   shootIntervalSeconds: 0.5
   shootDelaySeconds: 1
+  isActive: 0

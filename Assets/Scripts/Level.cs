@@ -7,12 +7,18 @@ using UnityEngine.UI;
 public class Level : MonoBehaviour
 {
     public static Level instance;
+
     uint numDestructables = 0;
+
     bool startNextLevel = false;
+
     float nextLevelTimer = 3;
+
     string[] levels = {"LevelOne", "LevelTwo" };
+
     int currentLevel = 1;
     int score = 0;
+
     Text scoreText;
 
     private void Awake()

@@ -7,9 +7,11 @@ public class Gun : MonoBehaviour
     Gun[] guns;
     public Bullet bullet;
     Vector2 direction;
+
     public bool autoShoot = false;
     public float shootIntervalSeconds = 0.5f;
     public float shootDelaySeconds = 1.0f;
+
     float shootTimer = 0f;
     float delayTimer = 0f;
 

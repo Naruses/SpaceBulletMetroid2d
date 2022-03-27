@@ -8,6 +8,11 @@ public class MoveSin : MonoBehaviour
     public float amplitude = 2;
     public float frequency = 0.5f;
     public bool inverted = false;
+
+    void Start()
+    {
+        sinCenterY = transform.position.y;
+    }
     void Update()
     {
 

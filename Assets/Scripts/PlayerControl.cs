@@ -12,6 +12,7 @@ public class PlayerControl : MonoBehaviour
     bool moveDown;
     bool moveLeft;
     bool moveRight;
+    bool speedUp;
 
     bool shoot;
 
@@ -65,6 +66,10 @@ public class PlayerControl : MonoBehaviour
         if (moveRight)
         {
             move.x += moveAmount;
+        }
+        if (speedUp)
+        {
+            moveAmount *= 2;
         }
 
         float moveMagnitude = Mathf.Sqrt(move.x * move.x + move.y * move.y);

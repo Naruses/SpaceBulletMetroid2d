@@ -5,8 +5,9 @@ using UnityEngine;
 public class Destructable : MonoBehaviour
 {
     bool canBeDestroyed = false;
+
     public int scoreValue = 10;
-    // Start is called before the first frame update
+
     void Start()
     {
         Level.instance.AddDestructable();
@@ -36,8 +37,9 @@ public class Destructable : MonoBehaviour
         Bullet bullet = collision.GetComponent<Bullet>();
         if (bullet != null)
         {
-            if (bullet.isEnemy)
+            if (!bullet.isEnemy)
             {
+                Level.instance.AddScore(scoreValue);
                 Destroy(gameObject);
                 Destroy(bullet.gameObject);
             }
